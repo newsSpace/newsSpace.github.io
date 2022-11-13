@@ -32,7 +32,7 @@ for launch_article in launch_articles:
     
     if cursor.rowcount>0: continue
 
-    URL = 'https://script.google.com/macros/s/AKfycbzoPSPL_Wj6CvuIPpk4tK2Njdg914AbjP1ue0LTTDTPAfwaObWNmvTyMVILQvPaNnJ-/exec?url=' + news_url + "&name=" + news_name + "&author=" + news_author + "&launchtime=" + news_launch_date + "&post=" + news_contents
+    URL = 'https://script.google.com/macros/s/AKfycbyiG7rOum49qrEuVcO44m9somlu1vew1qFj-AEMPjMwW0H9My8zqJgIlMknxHKhog/exec?url=' + news_url + "&name=" + news_name + "&author=" + news_author + "&launchtime=" + news_launch_date + "&post=" + news_contents
     response = requests.get(URL)
     response.status_code
     response.text
