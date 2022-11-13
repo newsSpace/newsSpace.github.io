@@ -1,0 +1,15 @@
+reate table space_news_list (
+idx int not null auto_increment,
+title_name varchar(100),
+link_url varchar(200),
+author_name varchar(100),
+launch_date varchar(50),
+news_contents text,
+contents_update tinyint default false,
+primary key(idx)
+);
+
+create table space_news_contents (
+space_news_contents text,
+space_news_list_idx int
+);
