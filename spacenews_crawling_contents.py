@@ -37,7 +37,7 @@ for row in result:
 
     cursor.execute("insert into space_news_contents values (%s, %s)", (news_contents, row[0]))
     
-    URL = 'https://script.google.com/macros/s/AKfycbzoPSPL_Wj6CvuIPpk4tK2Njdg914AbjP1ue0LTTDTPAfwaObWNmvTyMVILQvPaNnJ-/exec?contents=' + news_contents + "&blank=" + " "
+    URL = 'https://script.google.com/macros/s/AKfycbyiG7rOum49qrEuVcO44m9somlu1vew1qFj-AEMPjMwW0H9My8zqJgIlMknxHKhog/exec?contents=' + news_contents + "&blank=" + " "
     response = requests.get(URL)
     response.status_code
     response.text
