@@ -30,11 +30,7 @@ getData().then((dat) => {
         content.innerText = element.post
         content.classList.add("news-content")
         div.appendChild(content)
-
-
-        div.addEventListener("click", () => {
-            location.href = element.url
-        })
+        
         posts.appendChild(div)
     });
 })
