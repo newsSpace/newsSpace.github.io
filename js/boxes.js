@@ -5,7 +5,7 @@ function getData() {
         .then(res => res.json())
         .then(dat => {
             const data = dat.data
-            return data
+            return data.reverse()
         })
         .catch(err => console.log(err))
 }
@@ -30,7 +30,7 @@ getData().then((dat) => {
         content.innerText = element.post
         content.classList.add("news-content")
         div.appendChild(content)
-        
+
         posts.appendChild(div)
     });
 })
