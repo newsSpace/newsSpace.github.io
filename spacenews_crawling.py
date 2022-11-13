@@ -52,4 +52,4 @@ conn.close()
 
 
 #구글 스프레드시트 링크: https://docs.google.com/spreadsheets/d/1Q6Jb7669Tm4vhurdb5biFALgmdP5L60_3Rd16ci11nA/edit?usp=sharing
-#웹앱 링크: https://script.google.com/macros/s/AKfycbwvcA-Sp1qkkLU9d1sGZO1_tGFW3VOQoU0UT6mx7WXllm3cunM1Mcq5ibLVOM6gS5N-/exec
+#웹앱 링크: https://script.google.com/macros/s/AKfycbyiG7rOum49qrEuVcO44m9somlu1vew1qFj-AEMPjMwW0H9My8zqJgIlMknxHKhog/exec
