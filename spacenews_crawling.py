@@ -32,7 +32,7 @@ for launch_article in launch_articles:
     
     if cursor.rowcount>0: continue
 
-    URL = 'https://script.google.com/macros/s/AKfycbyiG7rOum49qrEuVcO44m9somlu1vew1qFj-AEMPjMwW0H9My8zqJgIlMknxHKhog/exec?url=' + news_url + "&name=" + news_name + "&author=" + news_author + "&launchtime=" + news_launch_date + "&post=" + news_contents
+    URL = 'https://script.google.com/macros/s/AKfycbyTBOyri6C6uNPbi9j4fY2Aey4sFArW2JrJ3m0cTB1B8dd8Afzs8dw9FbiHtEBrSEqp/exec?url=' + news_url + "&name=" + news_name + "&author=" + news_author + "&launchtime=" + news_launch_date + "&post=" + news_contents
     response = requests.get(URL)
     response.status_code
     response.text
@@ -52,4 +52,4 @@ conn.close()
 
 
 #구글 스프레드시트 링크: https://docs.google.com/spreadsheets/d/1Q6Jb7669Tm4vhurdb5biFALgmdP5L60_3Rd16ci11nA/edit?usp=sharing
-#웹앱 링크: https://script.google.com/macros/s/AKfycbyiG7rOum49qrEuVcO44m9somlu1vew1qFj-AEMPjMwW0H9My8zqJgIlMknxHKhog/exec
+#웹앱 링크: https://script.google.com/macros/s/AKfycbyTBOyri6C6uNPbi9j4fY2Aey4sFArW2JrJ3m0cTB1B8dd8Afzs8dw9FbiHtEBrSEqp/exec
