@@ -77,10 +77,10 @@ window.onload = () => {
 
 newsInYear.addEventListener("click", () => {
     if (!isHidden) {
-        newsInYear.classList.remove("hidden")
+        newsInYear.classList.remove("overflow")
         isHidden = !isHidden
     } else {
-        newsInYear.classList.add("hidden")
+        newsInYear.classList.add("overflow")
         isHidden = !isHidden
     }
 })
