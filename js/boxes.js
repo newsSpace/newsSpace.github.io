@@ -15,7 +15,6 @@ getData().then((dat) => {
     footer.classList.remove("hidden")
 
     dat.forEach(element => {
-        console.log(element.postdetail)
         const div = document.createElement("div")
         div.classList.add("box")
 
@@ -25,7 +24,7 @@ getData().then((dat) => {
         div.appendChild(title)
 
         const information = document.createElement("span")
-        information.innerText = "by " + element.author + "\n" + element.launchtime.substring(0, 10)
+        information.innerText = "by " + element.author + "\n" + element.launchtime.substring(0, 8) + String(parseInt(element.launchtime.substring(8, 10)) + 1)
         information.classList.add("news-author")
         div.appendChild(information)
 
