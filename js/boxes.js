@@ -29,8 +29,21 @@ getData().then((dat) => {
         div.appendChild(information)
 
         const content = document.createElement("p")
-        content.innerText = element.post
+        content.innerText = element.post + " "
         content.classList.add("news-content")
+        
+        const modalLinkBtn = document.createElement("i")
+        modalLinkBtn.classList.add("fa-solid", "fa-arrow-up-right-from-square", "expand-btn")
+        modalLinkBtn.addEventListener("click", () => {
+            const modal = document.getElementById("modal")
+            const modalParents = document.getElementById("modalParents")
+            modal.children[0].children[0].innerText = element.name
+            modal.children[1].innerText = element.postdetail
+            modal.classList.remove("hidden")
+            modalParents.classList.remove("hidden")
+        })
+
+        content.appendChild(modalLinkBtn)
         div.appendChild(content)
 
         posts.appendChild(div)

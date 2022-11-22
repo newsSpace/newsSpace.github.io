@@ -1,8 +1,5 @@
 :root {
-    --aero-blue: #CCEDE4;
-    --crystal: #A6D2E1;
-    --blue-bell: #A8A6DB;
-    --soap: #D3BAE9;
-    --shampoo: #F3D0F5;
-    --lavender-blush: #FFE7F7;
+    --layer-1: 1;
+    --layer-2: 2;
+    --layer-3: 3;
 }
