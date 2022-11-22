@@ -58,8 +58,15 @@ h1 {
     overflow-y: scroll;
 
     z-index: var(--layer-1);
+
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
+.box::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
 
 .news-in-year {
     display: flex;
@@ -167,8 +174,8 @@ hr {
     z-index: var(--layer-3);
 }
 
-.modal::--webkit-scrollbar {
-    display: none;
+.modal::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
 }
 
 .modal .head {
